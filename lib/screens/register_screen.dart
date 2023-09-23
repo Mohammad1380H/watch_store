@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:watch_store/components/extentions.dart';
-import 'package:watch_store/components/text_style.dart';
 import 'package:watch_store/widgets/app_text_field.dart';
 import 'package:watch_store/widgets/avatar.dart';
 import 'package:watch_store/widgets/main_button.dart';
 
 import '../res/dimens.dart';
 import '../res/strings.dart';
+import '../widgets/registration_app_bar.dart';
 
 // ignore: must_be_immutable
 class RegisterScreen extends StatelessWidget {
@@ -19,13 +17,7 @@ class RegisterScreen extends StatelessWidget {
     var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-          appBar: PreferredSize(
-            preferredSize: Size(size.width, size.height * .1),
-            child: Row(children: [
-              IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back)),
-              const Text(Strings.register,style: AppTextStyle.title,)
-            ]),
-          ),
+          appBar: RegisteratonAppBar(size: size),
           body: SizedBox(
             width: double.infinity,
             child: SingleChildScrollView(

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:watch_store/components/extentions.dart';
 import 'package:watch_store/components/text_style.dart';
+import 'package:watch_store/route/name.dart';
 
 import '../gen/assets.gen.dart';
 import '../res/dimens.dart';
@@ -43,7 +44,10 @@ class GetOtpScreen extends StatelessWidget {
                 textInputType: TextInputType.number,
               ),
               Dimens.medium.height,
-              MainButton(onPressed: () {}, text: Strings.next),
+              MainButton(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, AppScreens.register),
+                  text: Strings.next),
             ]),
       )),
     );
