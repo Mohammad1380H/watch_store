@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:watch_store/components/extentions.dart';
+import 'package:watch_store/route/name.dart';
 import 'package:watch_store/widgets/app_text_field.dart';
 import 'package:watch_store/widgets/avatar.dart';
 import 'package:watch_store/widgets/main_button.dart';
@@ -50,7 +51,10 @@ class RegisterScreen extends StatelessWidget {
                     icon: const Icon(Icons.location_on),
                   ),
                   Dimens.larg.height,
-                  MainButton(onPressed: () {}, text: Strings.next),
+                  MainButton(
+                      onPressed: () =>
+                          Navigator.pushNamed(context, AppScreens.main),
+                      text: Strings.next),
                   Dimens.larg.height,
                 ],
               ),

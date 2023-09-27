@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/components/theme.dart';
 import 'package:watch_store/route/name.dart';
 import 'package:watch_store/route/route.dart';
-import 'package:watch_store/screens/get_otp_screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,8 +18,8 @@ class MyApp extends StatelessWidget {
       theme: lightTheme(),
       initialRoute: AppScreens.root,
       routes: appRoutes,
-      title: 'Wahtch Store',
-      home: GetOtpScreen(),
+      title: 'Watch Store',
+
     );
   }
 }

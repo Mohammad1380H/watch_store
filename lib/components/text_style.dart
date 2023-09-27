@@ -16,6 +16,16 @@ class AppTextStyle {
       fontSize: 14,
       color: AppColor.title,
       fontWeight: FontWeight.w400);
+  static const TextStyle btnNavActiveStyle = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 12,
+      color: AppColor.btmNavActiveItem,
+      fontWeight: FontWeight.w400);
+  static const TextStyle btnNavInActiveStyle = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 12,
+      color: AppColor.btmNavInActiveItem,
+      fontWeight: FontWeight.w400);
 
   static const TextStyle mainButton = TextStyle(
       fontFamily: FontFamily.dana,

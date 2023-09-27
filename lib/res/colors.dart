@@ -7,6 +7,9 @@ abstract class AppColor {
   static const Color border = Color.fromARGB(255, 217, 220, 228);
   static const Color focusedBorderColor = Color.fromARGB(266, 0, 117, 251);
   static const Color buttonColor = Color.fromARGB(255, 0, 117, 251);
+  static const Color btmNav = Color.fromARGB(255, 255, 255, 255);
+  static const Color btmNavActiveItem = Color.fromARGB(255, 0, 0, 0);
+  static const Color btmNavInActiveItem = Color.fromARGB(255, 196, 196, 196);
   static const Color mainButtonText = Color.fromARGB(255, 255, 255, 255);
   static const Color surfaceColor = Color.fromARGB(255, 243, 243, 243);
   static const Color primaryColor = Colors.blue;
