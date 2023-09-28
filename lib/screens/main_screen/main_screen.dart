@@ -4,7 +4,6 @@ import 'package:watch_store/res/colors.dart';
 import 'package:watch_store/screens/main_screen/bascket_screen.dart';
 import 'package:watch_store/screens/main_screen/home_screen.dart';
 import 'package:watch_store/screens/main_screen/profile_screen.dart';
-
 import '../../gen/assets.gen.dart';
 import '../../res/strings.dart';
 import '../../widgets/btn_nav_item.dart';

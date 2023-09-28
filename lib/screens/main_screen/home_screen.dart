@@ -1,27 +1,43 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:watch_store/route/name.dart';
-import 'package:watch_store/screens/main_screen/product_list_screen.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:watch_store/components/text_style.dart';
+import '../../gen/assets.gen.dart';
+import '../../res/dimens.dart';
+import '../../res/strings.dart';
+import '../../widgets/app_slider.dart';
+import '../../widgets/cat_widget.dart';
+import '../../widgets/search_btn.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.amber,
-      child: Center(
-          child: ElevatedButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute<void>(
-              builder: (BuildContext context) => const ProductListScreen(),
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
+            child: Column(
+          children: [
+            SearchBtn(
+              onTap: () {},
             ),
-          );
-          // Navigator.pushNamed(context, AppScreens.productList);
-        },
-        child: const Text('مشاهده همه',style: TextStyle(fontSize: 15),),
-      )),
+            AppSlider(),
+            Row(
+              children: [
+                CatWidget(
+                  gradient: const [
+                    Color.fromARGB(255, 255, 166, 114),
+                    Color.fromARGB(255, 255, 217, 200),
+                  ],
+                  svgPath: Assets.svg.clasic,
+                  title: Strings.classic, onTap: () {  },
+                ),
+              ],
+            )
+          ],
+        )),
+      ),
     );
   }
 }
