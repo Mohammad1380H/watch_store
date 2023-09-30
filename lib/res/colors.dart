@@ -1,6 +1,22 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColor {
+  static const List<Color> catClassicColors = [
+    Color.fromARGB(255, 255, 166, 114),
+    Color.fromARGB(255, 255, 217, 200),
+  ];
+  static const List<Color> catSmartColors = [
+    Color.fromARGB(255, 139, 162, 168),
+    Color.fromARGB(255, 223, 238, 245),
+  ];
+  static const List<Color> catDigitalColors = [
+    Color(0xFFE183D4),
+    Color(0xFFFFE6F5),
+  ];
+  static const List<Color> catDesktopColors = [
+    Color(0xFF8396E1),
+    Color(0xFFE6FCFF),
+  ];
   static const Color title = Colors.black;
   static const Color hint = Color.fromARGB(255, 217, 220, 228);
   static const Color appBar = Color.fromARGB(255, 255, 255, 255);

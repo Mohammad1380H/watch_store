@@ -1,9 +1,6 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:watch_store/components/text_style.dart';
+import 'package:watch_store/res/colors.dart';
 import '../../gen/assets.gen.dart';
-import '../../res/dimens.dart';
 import '../../res/strings.dart';
 import '../../widgets/app_slider.dart';
 import '../../widgets/cat_widget.dart';
@@ -24,12 +21,25 @@ class HomeScreen extends StatelessWidget {
             ),
             AppSlider(),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CatWidget(
-                  gradient: const [
-                    Color.fromARGB(255, 255, 166, 114),
-                    Color.fromARGB(255, 255, 217, 200),
-                  ],
+                  gradient: AppColor.catDesktopColors ,
+                  svgPath: Assets.svg.desktop,
+                  title: Strings.desktop, onTap: () {  },
+                ),
+                CatWidget(
+                  gradient: AppColor.catDigitalColors ,
+                  svgPath: Assets.svg.digital,
+                  title: Strings.digital, onTap: () {  },
+                ),
+                CatWidget(
+                  gradient: AppColor.catSmartColors ,
+                  svgPath: Assets.svg.smart,
+                  title: Strings.smart, onTap: () {  },
+                ),
+                CatWidget(
+                  gradient: AppColor.catClassicColors ,
                   svgPath: Assets.svg.clasic,
                   title: Strings.classic, onTap: () {  },
                 ),

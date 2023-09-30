@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -10,7 +9,8 @@ class CatWidget extends StatelessWidget {
     required this.gradient,
     required this.title,
     required this.svgPath,
-    super.key, required this.onTap,
+    super.key,
+    required this.onTap,
   });
 
   final String title;
@@ -22,11 +22,12 @@ class CatWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.sizeOf(context);
     return GestureDetector(
-      onTap:onTap ,
+      onTap: onTap,
       child: Column(
         children: [
           Container(
             margin: const EdgeInsets.all(Dimens.small),
+            padding: const EdgeInsets.all(Dimens.small),
             height: size.height * .1,
             width: size.height * .1,
             decoration: BoxDecoration(
@@ -37,7 +38,9 @@ class CatWidget extends StatelessWidget {
               ),
               borderRadius: BorderRadius.circular(Dimens.larg),
             ),
-            child: SvgPicture.asset(svgPath),
+            child: SvgPicture.asset(
+              svgPath,
+            ),
           ),
           Text(
             title,
