@@ -8,6 +8,20 @@ class AppTextStyle {
   static const TextStyle title = TextStyle(
       fontFamily: FontFamily.dana, fontSize: 14, color: AppColor.title);
 
+  static const TextStyle prodcutTitle = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 16,
+      color: AppColor.title,
+      fontWeight: FontWeight.normal);
+
+  static const TextStyle oldPrice = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 12,
+      color: AppColor.oldPrice,
+      fontWeight: FontWeight.w400,
+      decoration: TextDecoration.lineThrough
+      );
+
   static const TextStyle hint = TextStyle(
       fontFamily: FontFamily.dana, fontSize: 14, color: AppColor.hint);
 

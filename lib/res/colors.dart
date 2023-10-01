@@ -5,6 +5,10 @@ abstract class AppColor {
     Color.fromARGB(255, 255, 166, 114),
     Color.fromARGB(255, 255, 217, 200),
   ];
+  static const List<Color> productBgColors = [
+    Color.fromARGB(255, 238, 238, 238),
+    Color.fromARGB(255, 255, 255, 255),
+  ];
   static const List<Color> catSmartColors = [
     Color.fromARGB(255, 139, 162, 168),
     Color.fromARGB(255, 223, 238, 245),
@@ -18,6 +22,7 @@ abstract class AppColor {
     Color(0xFFE6FCFF),
   ];
   static const Color title = Colors.black;
+  static const Color oldPrice = Color.fromARGB(255, 191, 191, 191);
   static const Color hint = Color.fromARGB(255, 217, 220, 228);
   static const Color appBar = Color.fromARGB(255, 255, 255, 255);
   static const Color searchBar = Color.fromARGB(255, 255, 255, 255);
