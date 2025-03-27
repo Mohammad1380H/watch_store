@@ -25,6 +25,7 @@ abstract class AppColor {
   static const Color oldPrice = Color.fromARGB(255, 191, 191, 191);
   static const Color hint = Color.fromARGB(255, 217, 220, 228);
   static const Color appBar = Color.fromARGB(255, 255, 255, 255);
+  static const Color amazingColor = Color.fromARGB(255, 57, 24, 80);
   static const Color searchBar = Color.fromARGB(255, 255, 255, 255);
   static const Color border = Color.fromARGB(255, 217, 220, 228);
   static const Color focusedBorderColor = Color.fromARGB(266, 0, 117, 251);

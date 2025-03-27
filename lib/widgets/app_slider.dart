@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/res/dimens.dart';
 
 final List<String> list = [
-  'https://webneel.com/daily/sites/default/files/images/daily/08-2018/2-nature-photography-besmirhamiti.jpg',
-  'https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg',
-  'https://webneel.com/daily/sites/default/files/images/daily/08-2018/4-nature-photography-italy-gavinhellier.jpg',
+  'https://media.mehrnews.com/d/2021/12/27/4/4002942.jpg',
+  'https://media.mehrnews.com/d/2021/12/27/3/4002944.jpg',
+  'https://media.mehrnews.com/d/2021/12/27/4/4002941.jpg',
 ];
 
 class AppSlider extends StatefulWidget {
@@ -29,7 +29,7 @@ class AppSlider extends StatefulWidget {
 }
 
 class _AppSliderState extends State<AppSlider> {
-  final CarouselController _carouselController = CarouselController();
+  final CarouselSliderController _carouselController = CarouselSliderController();
   int current = 0;
   @override
   Widget build(BuildContext context) {
@@ -43,6 +43,7 @@ class _AppSliderState extends State<AppSlider> {
               items: widget.widgwtList,
               options: CarouselOptions(
                 autoPlay: true,
+                reverse: true,
                 onPageChanged: (index, reason) {
                   setState(() {
                     current = index;

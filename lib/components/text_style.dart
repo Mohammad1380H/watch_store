@@ -14,13 +14,27 @@ class AppTextStyle {
       color: AppColor.title,
       fontWeight: FontWeight.normal);
 
-  static const TextStyle oldPrice = TextStyle(
+  static const TextStyle prodTimer = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 14,
+      color: Colors.blue,
+      fontWeight: FontWeight.normal);
+
+  static const TextStyle amazingPart = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 22,
+      color: AppColor.amazingColor,
+      fontWeight: FontWeight.w700);
+
+  static  TextStyle oldPrice = const TextStyle(
       fontFamily: FontFamily.dana,
       fontSize: 12,
       color: AppColor.oldPrice,
       fontWeight: FontWeight.w400,
-      decoration: TextDecoration.lineThrough
-      );
+      decoration: TextDecoration.lineThrough,
+      decorationThickness:5,
+       
+            );
 
   static const TextStyle hint = TextStyle(
       fontFamily: FontFamily.dana, fontSize: 14, color: AppColor.hint);
