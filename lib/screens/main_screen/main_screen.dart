@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:watch_store/res/btn_nav_index.dart';
 import 'package:watch_store/res/colors.dart';
@@ -47,8 +49,11 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     double btmNavHeight = size.height * .08;
-    return WillPopScope(
-      onWillPop: _onWillPop,
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) {
+        _onWillPop();
+      },
       child: Scaffold(
         body: Stack(
           children: [

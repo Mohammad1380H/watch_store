@@ -8,10 +8,14 @@ ThemeData lightTheme() {
       iconTheme: const IconThemeData(color: Colors.black),
       primaryColor: AppColor.primaryColor,
       scaffoldBackgroundColor: AppColor.scaffoldBackgroundColor,
+      elevatedButtonTheme: const ElevatedButtonThemeData(
+          style: ButtonStyle(
+        backgroundColor: WidgetStatePropertyAll(AppColor.buttonColor),
+      )),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: MaterialStateColor.resolveWith((states) {
-          if (states.contains(MaterialState.focused)) {
+        fillColor: WidgetStateColor.resolveWith((states) {
+          if (states.contains(WidgetState.focused)) {
             return AppColor.focusedTextField;
           } else {
             return AppColor.unFocusedTextField;

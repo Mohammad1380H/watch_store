@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/res/dimens.dart';
 
 final List<String> list = [
-  'https://media.mehrnews.com/d/2021/12/27/4/4002942.jpg',
-  'https://media.mehrnews.com/d/2021/12/27/3/4002944.jpg',
-  'https://media.mehrnews.com/d/2021/12/27/4/4002941.jpg',
+  'https://dl.kanzwatch.com/uploading/productgallery/1875472/p/watson-men-s-watch-model-w-1134g-352.jpg',
+  'https://cdn.honarechehre.ir/images/25650bf0-a01a-11ef-bc52-2770038fb4a3.webp',
+  'https://dl.bahalmag.ir/images/%D8%B9%DA%A9%D8%B3_%D8%B2%DB%8C%D8%A8%D8%A7%D8%AA%D8%B1%DB%8C%D9%86_%D8%B3%D8%A7%D8%B9%D8%AA_%D9%85%DA%86%DB%8C_%D8%AF%D8%AE%D8%AA%D8%B1%D8%A7%D9%86%D9%87/%D8%B9%DA%A9%D8%B3-%D8%B2%DB%8C%D8%A8%D8%A7%D8%AA%D8%B1%DB%8C%D9%86-%D8%B3%D8%A7%D8%B9%D8%AA-%D9%85%DA%86%DB%8C-%D8%AF%D8%AE%D8%AA%D8%B1%D8%A7%D9%86%D9%87.jpg',
 ];
 
 class AppSlider extends StatefulWidget {
@@ -29,12 +29,13 @@ class AppSlider extends StatefulWidget {
 }
 
 class _AppSliderState extends State<AppSlider> {
-  final CarouselSliderController _carouselController = CarouselSliderController();
+  final CarouselSliderController _carouselController =
+      CarouselSliderController();
   int current = 0;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 250,
+      height: 270,
       width: double.infinity,
       child: Column(
         children: [
