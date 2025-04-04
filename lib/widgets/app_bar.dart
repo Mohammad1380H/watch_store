@@ -16,18 +16,18 @@ class CustomAppBar extends StatelessWidget implements PreferredSize {
           height: preferredSize.height,
           decoration: BoxDecoration(
               borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(Dimens.medium),
-                bottomRight: Radius.circular(Dimens.medium),
+                bottomLeft: Radius.circular(AppDimens.medium),
+                bottomRight: Radius.circular(AppDimens.medium),
               ),
-              color: AppColor.appbar,
+              color: AppColors.appbar,
               boxShadow: [
                 BoxShadow(
-                    color: AppColor.shadow,
+                    color: AppColors.shadow,
                     offset: const Offset(0, 2),
                     blurRadius: 3)
               ]),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: Dimens.medium),
+            padding: const EdgeInsets.symmetric(horizontal: AppDimens.medium),
             child: child,
           ),
         ));

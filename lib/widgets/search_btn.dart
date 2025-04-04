@@ -15,16 +15,16 @@ class SearchBtn extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.all(Dimens.medium),
+        padding: const EdgeInsets.all(AppDimens.medium),
         child: Container(
           height: 52,
           width: double.infinity,
           decoration: BoxDecoration(
-              color: AppColor.searchBar,
+              color: AppColors.searchBar,
               borderRadius: BorderRadius.circular(60),
               boxShadow: const [
                 BoxShadow(
-                    color: AppColor.searchBar,
+                    color: AppColors.searchBar,
                     blurRadius: 3,
                     offset: Offset(0, 3))
               ]),

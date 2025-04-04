@@ -14,9 +14,9 @@ class AppSlider extends StatefulWidget {
   });
   final List<Widget> widgwtList = list.map((e) {
     return Padding(
-      padding: const EdgeInsets.all(Dimens.medium),
+      padding: const EdgeInsets.all(AppDimens.medium),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(Dimens.medium),
+        borderRadius: BorderRadius.circular(AppDimens.medium),
         child: Image.network(
           e,
           fit: BoxFit.cover,
@@ -63,8 +63,8 @@ class _AppSliderState extends State<AppSlider> {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          width: Dimens.medium,
-                          height: Dimens.medium,
+                          width: AppDimens.medium,
+                          height: AppDimens.medium,
                           decoration: BoxDecoration(
                               color:
                                   e.key == current ? Colors.black : Colors.grey,

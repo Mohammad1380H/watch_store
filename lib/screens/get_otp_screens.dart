@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:watch_store/components/extentions.dart';
 import 'package:watch_store/components/text_style.dart';
@@ -24,18 +23,18 @@ class GetOtpScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(Assets.png.mainLogo.path),
-              Dimens.medium.height,
+              AppDimens.medium.height,
               Text(
                 Strings.otpCodeSendFor
                     .replaceAll(Strings.replace, '090333333333'),
                 style: AppTextStyle.title,
               ),
-              Dimens.small.height,
+              AppDimens.small.height,
               const Text(
                 Strings.wrongNumberEditNumber,
                 style: AppTextStyle.primaryThemeTextStyle,
               ),
-              Dimens.larg.height,
+              AppDimens.larg.height,
               AppTextField(
                 prefixLable: '2:56',
                 lable: Strings.enterVerificationCode,
@@ -43,7 +42,7 @@ class GetOtpScreen extends StatelessWidget {
                 controller: controller,
                 textInputType: TextInputType.number,
               ),
-              Dimens.medium.height,
+              AppDimens.medium.height,
               MainButton(
                   onPressed: () =>
                       Navigator.pushNamed(context, AppScreens.register),

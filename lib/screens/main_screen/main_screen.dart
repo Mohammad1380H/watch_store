@@ -91,7 +91,7 @@ class _MainScreenState extends State<MainScreen> {
                 right: 0,
                 child: Container(
                   height: btmNavHeight,
-                  color: AppColor.btmNavColor,
+                  color: AppColors.btmNavColor,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [

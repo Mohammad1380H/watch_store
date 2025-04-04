@@ -26,7 +26,7 @@ class RegisterScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Dimens.larg.height,
+                  AppDimens.larg.height,
                   const Avatar(),
                   AppTextField(
                       lable: Strings.nameLastName,
@@ -50,12 +50,12 @@ class RegisterScreen extends StatelessWidget {
                     controller: controller,
                     icon: const Icon(Icons.location_on),
                   ),
-                  Dimens.larg.height,
+                  AppDimens.larg.height,
                   MainButton(
                       onPressed: () =>
                           Navigator.pushNamed(context, AppScreens.main),
                       text: Strings.next),
-                  Dimens.larg.height,
+                  AppDimens.larg.height,
                 ],
               ),
             ),

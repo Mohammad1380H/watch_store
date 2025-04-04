@@ -29,32 +29,32 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CatWidget(
-                  gradient: AppColor.catDesktopColors,
+                  gradient: AppColors.catDesktopColors,
                   svgPath: Assets.svg.phone,
                   title: Strings.desktop,
                   onTap: () {},
                 ),
                 CatWidget(
-                  gradient: AppColor.catDigitalColors,
+                  gradient: AppColors.catDigitalColors,
                   svgPath: Assets.svg.digital,
                   title: Strings.digital,
                   onTap: () {},
                 ),
                 CatWidget(
-                  gradient: AppColor.catSmartColors,
+                  gradient: AppColors.catSmartColors,
                   svgPath: Assets.svg.smart,
                   title: Strings.smart,
                   onTap: () {},
                 ),
                 CatWidget(
-                  gradient: AppColor.catClasicColors,
+                  gradient: AppColors.catClasicColors,
                   svgPath: Assets.svg.clasic,
                   title: Strings.classic,
                   onTap: () {},
                 ),
               ],
             ),
-            Dimens.larg.height,
+            AppDimens.larg.height,
             SingleChildScrollView(
               reverse: true,
               scrollDirection: Axis.horizontal,
@@ -92,7 +92,7 @@ class VerticalText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(Dimens.small),
+      padding: const EdgeInsets.all(AppDimens.small),
       child: RotatedBox(
         quarterTurns: -1,
         child: Column(
@@ -101,14 +101,14 @@ class VerticalText extends StatelessWidget {
               children: [
                 RotatedBox(
                     quarterTurns: 1, child: SvgPicture.asset(Assets.svg.back)),
-                Dimens.medium.width,
+                AppDimens.medium.width,
                 const Text(
                   Strings.viewAll,
                   style: AppTextStyle.title,
                 ),
               ],
             ),
-            Dimens.medium.height,
+            AppDimens.medium.height,
             const Text(
               Strings.amazing,
               style: AppTextStyle.amazingPart,

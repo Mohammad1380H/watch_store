@@ -21,14 +21,14 @@ class SendOtpScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(Assets.png.mainLogo.path),
-              Dimens.medium.height,
+              AppDimens.medium.height,
               AppTextField(
                 lable: Strings.enterYourNumber,
                 hint: Strings.hintPhoneNumber,
                 controller: controller,
                 textInputType: TextInputType.number,
               ),
-              Dimens.medium.height,
+              AppDimens.medium.height,
               MainButton(
                   onPressed: () =>
                       Navigator.pushNamed(context, AppScreens.getOtp),

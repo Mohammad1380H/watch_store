@@ -17,7 +17,7 @@ class Avatar extends StatelessWidget {
         ClipRRect(
             borderRadius: BorderRadius.circular(1000),
             child: Image.asset(Assets.png.avatar.path)),
-        Dimens.medium.height,
+        AppDimens.medium.height,
         const Text(
           Strings.chooseProfileImage,
           style: AppTextStyle.avatarText,

@@ -6,5 +6,5 @@ class AppButtonStyle {
 
   static ButtonStyle mainButtonStyle = ButtonStyle(
       shape: WidgetStatePropertyAll(RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(Dimens.medium))));
+          borderRadius: BorderRadius.circular(AppDimens.medium))));
 }

@@ -22,12 +22,12 @@ class ProductItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.all(Dimens.small),
-        padding: const EdgeInsets.all(Dimens.small),
+        margin: const EdgeInsets.all(AppDimens.small),
+        padding: const EdgeInsets.all(AppDimens.small),
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(Dimens.medium),
+            borderRadius: BorderRadius.circular(AppDimens.medium),
             gradient: const LinearGradient(
-                colors: AppColor.productBgGradiant,
+                colors: AppColors.productBgGradiant,
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter)),
         width: 200,
@@ -51,15 +51,13 @@ class ProductItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '${(oldPrice * (1 - (discount / 100)))
-                            .toInt()
-                            .seprateWithComma} تومان',
+                      '${(oldPrice * (1 - (discount / 100))).toInt().seprateWithComma} تومان',
                       style: AppTextStyle.title,
                     ),
                     Visibility(
                       visible: discount > 0 ? true : false,
                       child: Text(
-                        oldPrice.toString() ,
+                        oldPrice.toString(),
                         style: AppTextStyle.oldPrice,
                       ),
                     ),
@@ -68,7 +66,7 @@ class ProductItem extends StatelessWidget {
                 Visibility(
                   visible: discount > 0 ? true : false,
                   child: Container(
-                    padding: const EdgeInsets.all(Dimens.small * .5),
+                    padding: const EdgeInsets.all(AppDimens.small * .5),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(60),
                       color: Colors.red,
@@ -78,7 +76,7 @@ class ProductItem extends StatelessWidget {
                 )
               ],
             ),
-            Dimens.medium.height,
+            AppDimens.medium.height,
             Visibility(
               visible: time > 0 ? true : false,
               child: Container(
@@ -87,7 +85,7 @@ class ProductItem extends StatelessWidget {
                 color: Colors.blue,
               ),
             ),
-            Dimens.medium.height,
+            AppDimens.medium.height,
             Visibility(
               visible: time > 0 ? true : false,
               child: const Text(

@@ -26,8 +26,8 @@ class CatWidget extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: const EdgeInsets.all(Dimens.small),
-            padding: const EdgeInsets.all(Dimens.small),
+            margin: const EdgeInsets.all(AppDimens.small),
+            padding: const EdgeInsets.all(AppDimens.small),
             height: size.height * .1,
             width: size.height * .1,
             decoration: BoxDecoration(
@@ -36,7 +36,7 @@ class CatWidget extends StatelessWidget {
                 end: Alignment.bottomCenter,
                 colors: gradient,
               ),
-              borderRadius: BorderRadius.circular(Dimens.larg),
+              borderRadius: BorderRadius.circular(AppDimens.larg),
             ),
             child: SvgPicture.asset(
               svgPath,

@@ -44,7 +44,7 @@ class AppTextField extends StatelessWidget {
             ],
           ),
         ),
-        Dimens.medium.height,
+        AppDimens.medium.height,
         SizedBox(
           height: size.height * .07,
           width: size.width * 0.75,
@@ -54,7 +54,10 @@ class AppTextField extends StatelessWidget {
             textAlign: textAlign,
             keyboardType: textInputType,
             decoration: InputDecoration(
-                prefixIcon: icon, hintText: hint, hintStyle: AppTextStyle.hint,),
+              prefixIcon: icon,
+              hintText: hint,
+              hintStyle: AppTextStyle.hint,
+            ),
           ),
         )
       ],

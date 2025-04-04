@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -23,7 +22,7 @@ class BtnNavItem extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        color: AppColor.btmNavColor,
+        color: AppColors.btmNavColor,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -31,8 +30,8 @@ class BtnNavItem extends StatelessWidget {
             SvgPicture.asset(
               svgIconPath,
               color: isActive
-                  ? AppColor.btmNavActiveItem
-                  : AppColor.btmNavInActiveItem,
+                  ? AppColors.btmNavActiveItem
+                  : AppColors.btmNavInActiveItem,
             ),
             Text(
               text,
