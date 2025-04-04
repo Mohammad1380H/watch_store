@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                   onTap: () {},
                 ),
                 CatWidget(
-                  gradient: AppColor.catClassicColors,
+                  gradient: AppColor.catClasicColors,
                   svgPath: Assets.svg.clasic,
                   title: Strings.classic,
                   onTap: () {},

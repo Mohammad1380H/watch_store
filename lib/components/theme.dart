@@ -10,7 +10,7 @@ ThemeData lightTheme() {
       scaffoldBackgroundColor: AppColor.scaffoldBackgroundColor,
       elevatedButtonTheme: const ElevatedButtonThemeData(
           style: ButtonStyle(
-        backgroundColor: WidgetStatePropertyAll(AppColor.buttonColor),
+        backgroundColor: WidgetStatePropertyAll(AppColor.primaryColor),
       )),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
@@ -24,7 +24,7 @@ ThemeData lightTheme() {
         contentPadding: const EdgeInsets.all(Dimens.medium),
         enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(Dimens.medium),
-            borderSide: const BorderSide(color: AppColor.border)),
+            borderSide: const BorderSide(color: AppColor.borderColor)),
         focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(Dimens.medium),
             borderSide: const BorderSide(color: AppColor.primaryColor)),

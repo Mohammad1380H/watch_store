@@ -23,7 +23,7 @@ class BtnNavItem extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        color: AppColor.btmNav,
+        color: AppColor.btmNavColor,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,

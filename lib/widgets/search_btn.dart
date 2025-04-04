@@ -24,7 +24,7 @@ class SearchBtn extends StatelessWidget {
               borderRadius: BorderRadius.circular(60),
               boxShadow: const [
                 BoxShadow(
-                    color: AppColor.searchBarShadow,
+                    color: AppColor.searchBar,
                     blurRadius: 3,
                     offset: Offset(0, 3))
               ]),

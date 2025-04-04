@@ -27,7 +27,7 @@ class ProductItem extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(Dimens.medium),
             gradient: const LinearGradient(
-                colors: AppColor.productBgColors,
+                colors: AppColor.productBgGradiant,
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter)),
         width: 200,

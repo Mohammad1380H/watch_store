@@ -3,6 +3,8 @@ import 'package:watch_store/components/theme.dart';
 import 'package:watch_store/route/name.dart';
 import 'package:watch_store/route/route.dart';
 
+import 'screens/main_screen/product_list_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: lightTheme(),
       initialRoute: AppScreens.root,
-      routes: appRoutes,
+      home: ProductListScreen(),
+      // routes: appRoutes,
       title: 'Watch Store',
 
     );
