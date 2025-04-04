@@ -28,5 +28,6 @@ ThemeData lightTheme() {
         focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(AppDimens.medium),
             borderSide: const BorderSide(color: AppColors.primaryColor)),
-      ));
+      ),
+      fontFamily: 'Dana');
 }
